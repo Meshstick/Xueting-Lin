@@ -33,6 +33,12 @@
       font-size: 2.75rem;
       font-weight: 700;
       color: #1e293b;
+      margin-bottom: 0.25rem;
+    }
+
+    header p {
+      font-size: 1.15rem;
+      color: #475569;
     }
 
     .projects-grid {
@@ -48,6 +54,14 @@
       box-shadow: 0 4px 12px rgba(30, 41, 59, 0.06);
       display: flex;
       flex-direction: column;
+      text-decoration: none;
+      color: inherit;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 20px rgba(30, 41, 59, 0.12);
     }
 
     .image-placeholder {
@@ -85,37 +99,37 @@
   <div class="container">
     <header>
       <h1>Mill</h1>
+      <p>Student</p>
     </header>
 
     <main class="projects-grid">
       
       <!-- Project 1 -->
-      <article class="project-card">
-        <!-- To add a picture: delete the div below and uncomment the img tag -->
+      <a href="project1.html" class="project-card">
         <div class="image-placeholder">Project 1 Image</div>
         <!-- <img src="project1.jpg" alt="Project 1"> -->
         <div class="project-info">
           <h2>Project One</h2>
         </div>
-      </article>
+      </a>
 
       <!-- Project 2 -->
-      <article class="project-card">
+      <a href="project2.html" class="project-card">
         <div class="image-placeholder">Project 2 Image</div>
         <!-- <img src="project2.jpg" alt="Project 2"> -->
         <div class="project-info">
           <h2>Project Two</h2>
         </div>
-      </article>
+      </a>
 
       <!-- Project 3 -->
-      <article class="project-card">
+      <a href="project3.html" class="project-card">
         <div class="image-placeholder">Project 3 Image</div>
         <!-- <img src="project3.jpg" alt="Project 3"> -->
         <div class="project-info">
           <h2>Project Three</h2>
         </div>
-      </article>
+      </a>
 
     </main>
   </div>
